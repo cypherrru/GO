@@ -1,0 +1,383 @@
+.order {
+    width: calc(100% - 80px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.order__info {
+    width: calc(62.5% - 80px);
+    padding: 40px;
+    margin-right: 40px;
+    background: #141414
+}
+
+.order__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: .02em;
+    color: #fff;
+    margin-bottom: 20px
+}
+
+.order__inputs,
+.order__radio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%
+}
+
+.order__payment {
+    width: calc(34.375% - 80px);
+    padding: 40px
+}
+
+.order__inputs-item {
+    width: calc((100% - 10px)/2);
+    margin-bottom: 10px;
+    position: relative
+}
+
+.order__inputs-item:nth-child(2n+1) {
+    margin-right: 10px
+}
+
+.order__inputs-comment {
+    width: 100%;
+    margin-right: 0 !important
+}
+
+.order__input {
+    width: calc(100% - 45px);
+    background: #232323;
+    border: none;
+    padding: 15px 30px 15px 15px;
+    color: #fff
+}
+
+.order__input-comment {
+    min-height: 110px
+}
+
+.order__radio {
+    margin-bottom: 40px
+}
+
+.order__radio-item {
+    width: calc((100% - 20px)/3);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start
+}
+
+.order__radio-item:not(:last-child) {
+    margin-right: 10px
+}
+
+.order__radio-name {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 4px
+}
+
+.order__radio-price {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: .02em;
+    color: #acacac
+}
+
+.order__payment-btn {
+    background: #fff;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 15px 0;
+    margin-top: 25px
+}
+
+.order__payment-btn-txt {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #010101
+}
+
+.error-input {
+    border: 1px solid red
+}
+
+.error-txt {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #bebebe;
+    margin-top: 5px
+}
+
+.radio-btn {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    width: 34px;
+    height: 24px;
+    padding-top: 4px
+}
+
+.radio-btn+label {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
+    padding-top: 4px
+}
+
+.radio-btn+label::before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-right: .5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%
+}
+
+.radio-btn:checked+label::before {
+    background-color: #141414
+}
+
+.radio-btn+label::after {
+    content: "";
+    display: inline-block;
+    width: .75em;
+    height: .7em;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    border-radius: 50%;
+    margin-right: .5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    position: absolute;
+    right: 4px
+}
+
+.radio-btn:checked+label::after {
+    background-color: #fff
+}
+
+@media(max-width: 1200px) {
+    .order__info {
+        width: unset;
+        margin-right: 0;
+        margin-bottom: 40px
+    }
+}
+
+@media(max-width: 580px) {
+    .order__inputs-item {
+        margin-right: 0 !important;
+        width: 100%
+    }
+
+    .shop {
+        padding: 0
+    }
+
+    .order__info {
+        padding: 30px 20px
+    }
+}
+
+@media(max-width: 500px) {
+    .order__radio {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap
+    }
+
+    .order__radio-item {
+        margin-right: 0;
+        width: 100%
+    }
+
+    .order__radio-item:not(:last-child) {
+        margin-bottom: 15px
+    }
+}
+
+.order__payment {
+    background: #232323;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content
+}
+
+.order__payment-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: .02em;
+    color: #fff;
+    margin-bottom: 20px
+}
+
+.order__payment-choose {
+    background: #141414
+}
+
+.order__payment select {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: #141414;
+    width: 100%;
+    height: 60px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: .02em;
+    color: #fff;
+    padding: 0 10px;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(/local/templates/new_ru/img/dropedArrow.png) no-repeat;
+    background-position-x: calc(100% - 15px);
+    background-position-y: center;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-bottom: 20px
+}
+
+.order__payment select option {
+    background: #141414
+}
+
+.order__payment-price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 100%
+}
+
+.order__payment-txt:first-child {
+    font-weight: 400
+}
+
+.order__payment-txt:last-child {
+    font-weight: 500
+}
+
+.order__payment-price:not(:last-child) {
+    margin-bottom: 15px
+}
+
+.data-processing-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin-top: 15px
+}
+
+.data-processing-txt {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 13px;
+    color: rgba(255, 255, 255, .6)
+}
+
+.data-processing {
+    margin-right: 10px
+}
+
+.paymant-summ {
+    margin-top: 25px;
+    font-weight: 700;
+    font-size: 20px
+}
+
+.paymant-summ .order__payment-txt {
+    margin-top: 25px;
+    font-weight: 700;
+    font-size: 20px
+}
+
+@media(max-width: 1200px) {
+    .order__payment {
+        width: unset
+    }
+}
+
+@media(max-width: 580px) {
+    .order__payment {
+        padding: 30px 20px
+    }
+}
+
+@media(max-width: 1200px) {
+    .order {
+        display: block;
+        width: 100%
+    }
+}

@@ -1,0 +1,271 @@
+/* НАЧАЛО СТИЛЕЙ ПК ХЕАДЕРА*/
+
+.header {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0) 99.84%);
+    display: flex;
+    width: 100%;
+    height: 110px;
+    position: absolute;
+    z-index: 10;
+}
+
+.logo {
+    width: 10%;
+    text-align: center;
+    padding-top: 12px;
+}
+
+.menu {
+    width: 80%;
+}
+
+.menu_nav {}
+
+ul.menu_ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+li.menu_item {
+    color: #fff;
+    padding: 20px;
+    text-transform: uppercase;
+    width: 10%;
+    height: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.menu_item a,
+.menu_item span {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+a.square,
+span.square {
+    position: relative;
+}
+
+a.square:after,
+span.square:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    top: 26px;
+    left: 0;
+    display: block;
+    transition: width 0.3s ease-out;
+    height: 2px;
+    background-color: #fff;
+}
+
+a.square:hover:after,
+span.square:hover:after {
+    width: 100%;
+}
+
+a.selected:after,
+span.selected:after {
+    width: 100% !important;
+}
+
+.submenu {
+    list-style: none;
+    position: relative;
+    top: 70%;
+    padding: 10px;
+    opacity: 0;
+    display: none;
+    left: -30%;
+    transition: .3s;
+    z-index: 5;
+    background-color: #000;
+    min-width: 160px;
+}
+
+
+.submenu li {
+    padding: 10px;
+}
+
+.language {
+    position: absolute;
+    right: 20px !important;
+    top: 25% !important;
+}
+
+select.lg_select {
+    background-color: #00000000;
+    border: none;
+    width: 50px;
+    color: #fff;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.lg_select option {
+    background-color: #000;
+}
+
+@media (max-width: 800px) {
+    .header {
+        display: none !important;
+    }
+}
+
+/* КОНЕЦ СТИЛЕЙ ПК ХЕАДЕРА*/
+
+/* НАЧАЛО СТИЛЕЙ МОБИЛЬНОГО ХЕАДЕРА*/
+.hamburger-menu {
+    display: none;
+}
+
+.hamburger-menu .logo {
+    width: 100% !important;
+    padding-top: 6px !important;
+    text-align: center !important;
+}
+
+.hamburger-menu .language {
+    position: absolute;
+    right: 20px !important;
+    top: 25% !important;
+}
+
+.burger-menu__social-block {
+    max-width: 768px;
+    display: flex;
+}
+
+.burger-menu__social-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #232323;
+    height: 100px;
+}
+
+.burger-menu__social-item:not(:last-child) {
+    width: calc(25% - 1px);
+    border-right: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.burger-menu__social-item:last-child {
+    width: 25%;
+}
+
+.burger-menu__social-image {
+    height: 40px;
+    width: 40px;
+}
+
+.burger-menu__social-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.burger-menu__social-block-under-block {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+@media (max-width: 800px) {
+    .hamburger-menu {
+        background-color: #1A1919;
+        width: 100%;
+        height: 55px;
+        top: 0;
+        display: flex;
+        position: fixed;
+        z-index: 9999;
+    }
+
+    #menu__toggle {
+        width: 0;
+        opacity: 0;
+    }
+
+    .menu__btn {
+        position: fixed;
+        top: 25px;
+        left: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 5;
+    }
+
+    .menu__btn>span,
+    .menu__btn>span::before,
+    .menu__btn>span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+        transition-duration: .45s;
+    }
+
+    .menu__box {
+        display: block;
+        position: fixed;
+        top: 55px;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0px 0;
+        z-index: 1;
+        list-style: none;
+        background-color: #232323;
+        box-shadow: 2px 2px 6px rgb(0 0 0 / 40%);
+        transition-duration: .45s;
+    }
+
+    .teams_menu {
+        display: flex;
+    }
+
+    .go {
+        width: 50%;
+        text-align: center;
+        padding: 15px 0px;
+        text-decoration: none;
+        border-right: 2px solid #000;
+        border-bottom: 2px solid #000;
+    }
+
+    .go img {
+        width: 50px;
+        padding: 10px 0px;
+    }
+
+    .text_go {
+        color: #fff;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    .menu__box li {
+        border-bottom: 1px solid #000;
+        text-align: center;
+    }
+
+    .menu__item {
+        display: block;
+        padding: 18px 24px;
+        color: #fff;
+        font-size: 20px;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition-duration: .25s;
+    }
+}
+/* КОНЕЦ СТИЛЕЙ МОБИЛЬНОГО ХЕАДЕРА*/

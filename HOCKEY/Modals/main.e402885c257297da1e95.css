@@ -1,0 +1,733 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap);
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: generalFont
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden
+}
+
+pre {
+    color: #fff
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    background: #fff
+}
+
+a:hover {
+    text-decoration: none;
+    color: #fff
+}
+
+.divasdf {
+    width: 100%;
+    height: 100%
+}
+
+.class {
+    margin-bottom: 300px
+}
+
+.popup__modal-txt:last-child {
+    margin: 0
+}
+
+.popup__modal-window {
+    position: fixed;
+    display: none;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    background: rgba(0, 0, 0, .8);
+    left: 0;
+    top: 0;
+    -ms-flex-line-pack: center;
+    align-content: center
+}
+
+.popup__modal-close-block {
+    width: 100%;
+    height: 26px;
+    position: relative;
+    margin-bottom: 10px
+}
+
+.popup__modal-close-button {
+    position: absolute;
+    right: 50px;
+    cursor: pointer;
+    width: 26px;
+    height: 26px
+}
+
+.popup__modal-close-button img {
+    width: 100%
+}
+
+.popup__modal-block {
+    width: 65%;
+    height: 75%;
+    background: #141414;
+    padding: 40px 20px 40px 40px
+}
+
+.popup__modal {
+    height: 100%;
+    overflow-y: scroll;
+    padding-right: 20px
+}
+
+.popup__modal-banner {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 40px;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 40px
+}
+
+.popup__modal-banner img {
+    width: 100%
+}
+
+.popup__modal-banner-share {
+    background: #232323;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer
+}
+
+.popup__modal-banner-share img {
+    width: 100%
+}
+
+.popup__modal-banner-share-img {
+    width: 20px;
+    height: 18px;
+    position: relative
+}
+
+.popup__modal-banner-share-links {
+    width: 40px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    overflow: hidden;
+    position: absolute;
+    top: 41px;
+    display: none
+}
+
+.popup__modal-banner-share-link {
+    background: #232323;
+    width: 40px;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 1px
+}
+
+.popup__modal-banner-txt-block {
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: end;
+    align-content: flex-end;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 10px 0px 40px
+}
+
+.popup__modal-banner-title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: .02em;
+    color: #fff;
+    margin-bottom: 10px;
+    width: 100%
+}
+
+.popup__modal-banner-txt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%
+}
+
+.popup__modal-banner-date {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: .02em;
+    color: rgba(255, 255, 255, .6);
+    margin-right: 15px
+}
+
+.popup__modal-banner-hash {
+    background-color: #d19ff9;
+    padding: 6px 10px;
+    color: #000;
+    font-size: 16px;
+    line-height: 20px
+}
+
+.popup__modal-title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: .02em;
+    color: #fff;
+    margin-bottom: 30px
+}
+
+.popup__modal-txt {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: .02em;
+    color: rgba(255, 255, 255, .8);
+    margin-bottom: 20px
+}
+
+.popup__modal-image-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 400px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 20px
+}
+
+.popup__modal-image {
+    width: calc(50% - 10px);
+    height: 400px
+}
+
+.popup__modal-image img {
+    width: 100%;
+    height: 100%
+}
+
+.popup__modal-image:nth-child(2n) {
+    margin-left: 20px
+}
+
+.popup__modal-requisites {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: .02em;
+    color: rgba(255, 255, 255, .8)
+}
+
+.preview__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%
+}
+
+.preview__date-and-place-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: .02em;
+    color: #fff;
+    text-align: left;
+    white-space: nowrap
+}
+
+.preview__date {
+    margin-right: 5px
+}
+
+.preview__place {
+    color: rgba(255, 255, 255, .4)
+}
+
+.preview__stage {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: .02em;
+    color: #fff;
+    text-align: center
+}
+
+.preview__division {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: .02em;
+    color: #fff;
+    text-align: right
+}
+
+.preview__versus {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 35px
+}
+
+.preview__team {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 40%
+}
+
+.preview__team-name {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: .02em;
+    color: #fff
+}
+
+.preview__team-logo {
+    width: 115px;
+    height: 115px;
+    margin: 0 20px
+}
+
+.preview__team-logo img {
+    height: 100%
+}
+
+.preview__score-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.preview__score {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 52px;
+    letter-spacing: .02em;
+    color: #fff
+}
+
+.preview__score-separator {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 52px;
+    letter-spacing: .02em;
+    color: #fff;
+    margin: 0 10px
+}
+
+.matchs-history {
+    width: 100%;
+    margin-top: 50px
+}
+
+.matchs-history__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: .02em;
+    color: #fff
+}
+
+.matchs-history__past-match-block {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 120px;
+    background: #232323;
+    -webkit-box-shadow: 0px 2px 14px rgba(0, 0, 0, .08);
+    box-shadow: 0px 2px 14px rgba(0, 0, 0, .08)
+}
+
+.matchs-history__past-match-block:not(:last-child) {
+    margin-bottom: 15px
+}
+
+.matchs-history__date-and-area-block {
+    margin-left: 25px
+}
+
+.matchs-history__date {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: .02em;
+    color: #fff
+}
+
+.matchs-history__area {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: .02em;
+    color: rgba(255, 255, 255, .4)
+}
+
+.matchs-history__versus-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.matchs-history__team {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.matchs-history__team-name {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: .02em;
+    color: #fff
+}
+
+.matchs-history__team-logo {
+    min-width: 50px;
+    max-width: 50px;
+    height: 50px;
+    margin: 0 15px
+}
+
+.matchs-history__team-logo img {
+    width: 100%
+}
+
+.matchs-history__score-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.matchs-history__score {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: .02em;
+    color: #fff
+}
+
+.matchs-history__separator {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: .02em;
+    color: #fff;
+    margin: 0 15px
+}
+
+.matchs-history__button {
+    width: 170px;
+    height: 45px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-right: 25px
+}
+
+.matchs-history__button-txt {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: .02em;
+    color: #010101;
+    padding-bottom: 4px
+}
+
+.info-element {
+    width: 33.3333333333%
+}
+
+.inviz {
+    display: none
+}
+
+.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.overflow-no {
+    overflow: hidden
+}
+
+.no-margin {
+    margin: 0
+}
+
+.padding-left {
+    padding-left: 50px
+}
+
+@media(max-width: 1150px) {
+    .matchs-history__team-name {
+        display: none
+    }
+}
+
+@media(max-width: 1040px) {
+    .preview__stage {
+        text-align: right
+    }
+}
+
+@media(max-width: 915px) {
+    .preview__stage {
+        font-size: 16px;
+        line-height: 22px;
+        display: none
+    }
+
+    .preview__info {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+
+    .info-element {
+        width: 100%;
+        text-align: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center
+    }
+
+    .inviz {
+        display: block
+    }
+
+    .preview__place {
+        color: #fff
+    }
+
+    .preview__division {
+        font-size: 12px;
+        line-height: 17px;
+        text-align: center;
+        letter-spacing: .02em;
+        color: rgba(255, 255, 255, .4);
+        margin: 10px 0
+    }
+
+    .preview__team {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+
+    .preview__team:first-child {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse
+    }
+
+    .matchs-history__past-match-block {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        height: 175px
+    }
+
+    .matchs-history__date-and-area-block {
+        margin-left: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex
+    }
+
+    .matchs-history__date {
+        margin-right: 15px
+    }
+
+    .matchs-history__button {
+        margin-right: 0;
+        width: 160px;
+        height: 36px
+    }
+
+    .matchs-history__versus-block {
+        margin: 20px 0
+    }
+}
+
+@media(min-width: 769px) {
+    .popup__modal::-webkit-scrollbar {
+        width: 5px;
+        background-color: #000
+    }
+
+    .popup__modal::-webkit-scrollbar-thumb {
+        background-color: #414141
+    }
+}
+
+@media(max-width: 768px) {
+    .popup__modal-block {
+        background: #232323;
+        width: 100%;
+        padding: 20px
+    }
+
+    .popup__modal-close-button {
+        right: 20px
+    }
+
+    .matchs-history__past-match-block {
+        background: #141414
+    }
+}
+
+@media(max-width: 550px) {
+    .popup__modal-title {
+        font-size: 24px;
+        line-height: 32px
+    }
+
+    .preview__team-logo {
+        width: 70px;
+        height: 70px
+    }
+
+    .preview__team-name {
+        font-size: 14px;
+        line-height: 20px
+    }
+}
+
+@font-face {
+    font-family: generalFont;
+    src: url(assets/cea1e8e8a45b9be98eac.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: boldGeneralFont;
+    src: url(assets/0139c8dd0c2e0ebbba4b.ttf) format("truetype")
+}
+
+/*# sourceMappingURL=main.869221afd6f95de7df99.css.map*/

@@ -1,0 +1,153 @@
+.products__item-big {
+    width: 100%;
+    margin-right: 0
+}
+
+@media(max-width: 1550px) {
+    .products__item {
+        width: calc((100% - 40px)/3)
+    }
+
+    .products__item:not(:nth-child(4n+4)) {
+        margin-right: 0px
+    }
+
+    .products__item:not(:nth-child(3n+3)) {
+        margin-right: 20px
+    }
+}
+
+@media(max-width: 1290px) {
+    .products__item-txt {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px
+    }
+
+    .products__item-price {
+        font-weight: 700
+    }
+}
+
+@media(max-width: 1200px) {
+    .products__item {
+        width: calc((100% - 20px)/2)
+    }
+
+    .products__item:not(:nth-child(3n+3)) {
+        margin-right: 0px
+    }
+
+    .products__item:not(:nth-child(2n+2)) {
+        margin-right: 20px
+    }
+}
+
+@media(max-width: 1020px) {
+    .shop__banner-swiper-block {
+        display: none
+    }
+
+    .products__item-basket {
+        display: none
+    }
+
+    .products__item-txt {
+        width: 100%;
+        border-right: none
+    }
+}
+
+@media(max-width: 860px) {
+    .products__item-txt {
+        font-size: 14px;
+        line-height: 20px;
+        padding: 12px 0 12px 12px;
+        height: 56px
+    }
+}
+
+@media(max-width: 768px) {
+    .products__item:nth-child(3n+3) {
+        width: 100%;
+        margin-right: 0
+    }
+
+    .products__item {
+        margin-right: 0 !important
+    }
+
+    .products__item:nth-child(3n+1) {
+        margin-right: 20px !important
+    }
+
+    .products__list {
+        margin-top: 0
+    }
+
+    .products__item-txt {
+        font-weight: 400
+    }
+
+    .products__item-name {
+        font-weight: 400
+    }
+
+    .products__item-sale,
+    .products__item-hit {
+        left: 12px;
+        top: 12px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 100%;
+        padding: 6px 10px
+    }
+
+    .products__item-hit {
+        left: 12px;
+        top: 12px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 100%;
+        padding: 6px 13px
+    }
+
+    .products__item-hit-twice {
+        top: 40px
+    }
+
+    .products__item-like {
+        top: 12px;
+        right: 12px
+    }
+
+    .shop__banner {
+        height: 580px
+    }
+}
+
+@media(max-width: 490px) {
+    .input-block {
+        position: relative;
+        width: 100%
+    }
+
+    .input-clear {
+        position: absolute;
+        right: 14px;
+        top: 43px;
+        font-size: 22px;
+        line-height: 100%
+    }
+}
+
+@media(max-width: 375px) {
+
+    .products__item-txt,
+    .products__item-price {
+        font-size: 11px;
+        line-height: 14px
+    }
+}
